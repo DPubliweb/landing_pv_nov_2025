@@ -1,0 +1,82 @@
+.backdrop__3tG5Hl {
+  align-items: center;
+  bottom: -1000px;
+  display: flex;
+  justify-content: center;
+  left: -1000px;
+  padding: 1030px;
+  pointer-events: none;
+  position: fixed;
+  right: -1000px;
+  top: -1000px;
+  transition:
+    background-color 300ms ease-in-out,
+    z-index 300ms step-end;
+  z-index: -1;
+}
+
+.backdrop__3tG5Hl.open__1oMisJ {
+  background-color: rgba(119, 119, 119, 0.7);
+  pointer-events: auto;
+  transition: background-color 300ms ease-in-out;
+  z-index: 1100;
+}
+
+.lightbox__3bUz8F {
+  background-color: white;
+  box-shadow:
+    0 0 12px rgba(0, 0, 0, 0.3),
+    0 1px 5px rgba(0, 0, 0, 0.2);
+  max-height: 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.iframeWrapper__yCVOH2 {
+  /* iOS has a 'feature' where it will expand iframes so they become as large as their content
+     document. When this happens the following properties allow the user to scroll in the parent
+     element instead of the iframe itself. This should have no effect on non-iOS browsers; the
+     scrolling will be entirely within the iframe. */
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.iframeWrapper__yCVOH2 iframe {
+  border: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.close__2NcGKV {
+  background: url("")
+    center / 30px 30px transparent no-repeat;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  height: 40px;
+  position: absolute;
+  right: -19px;
+  top: -19px;
+  width: 40px;
+}
+
+@media only screen and (max-width: 420px) {
+  .backdrop__3tG5Hl {
+    /* Allow the lightbox to reach the vertical viewport edges before scrolling */
+    padding-left: 1000px;
+    padding-right: 1000px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .close__2NcGKV {
+    /* Move the close button to the left so it remains visible */
+    right: 10px;
+  }
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkxpZ2h0Ym94LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2YsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QixhQUFhO0VBQ2IsZUFBZTtFQUNmLG9CQUFvQjtFQUNwQixlQUFlO0VBQ2YsY0FBYztFQUNkLFlBQVk7RUFDWjs7MEJBRXdCO0VBQ3hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLDBDQUEwQztFQUMxQyxvQkFBb0I7RUFDcEIsOENBQThDO0VBQzlDLGFBQWE7QUFDZjs7QUFFQTtFQUNFLHVCQUF1QjtFQUN2Qjs7Z0NBRThCO0VBQzlCLGdCQUFnQjtFQUNoQixlQUFlO0VBQ2Ysa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0U7OztvREFHa0Q7RUFDbEQsaUNBQWlDO0VBQ2pDLGNBQWM7O0VBRWQsZ0JBQWdCO0VBQ2hCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osY0FBYztFQUNkLFlBQVk7RUFDWixXQUFXO0FBQ2I7O0FBRUE7RUFDRTs0Q0FDMEM7RUFDMUMsWUFBWTtFQUNaLGVBQWU7RUFDZixZQUFZO0VBQ1osWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osVUFBVTtFQUNWLFdBQVc7QUFDYjs7QUFFQTtFQUNFO0lBQ0UsNkVBQTZFO0lBQzdFLG9CQUFvQjtJQUNwQixxQkFBcUI7RUFDdkI7QUFDRjs7QUFFQTtFQUNFO0lBQ0UsNERBQTREO0lBQzVELFdBQVc7RUFDYjtBQUNGIiwiZmlsZSI6IkxpZ2h0Ym94LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrZHJvcCB7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGJvdHRvbTogLTEwMDBweDtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGxlZnQ6IC0xMDAwcHg7XG4gIHBhZGRpbmc6IDEwMzBweDtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgcmlnaHQ6IC0xMDAwcHg7XG4gIHRvcDogLTEwMDBweDtcbiAgdHJhbnNpdGlvbjpcbiAgICBiYWNrZ3JvdW5kLWNvbG9yIDMwMG1zIGVhc2UtaW4tb3V0LFxuICAgIHotaW5kZXggMzAwbXMgc3RlcC1lbmQ7XG4gIHotaW5kZXg6IC0xO1xufVxuXG4uYmFja2Ryb3Aub3BlbiB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMTE5LCAxMTksIDExOSwgMC43KTtcbiAgcG9pbnRlci1ldmVudHM6IGF1dG87XG4gIHRyYW5zaXRpb246IGJhY2tncm91bmQtY29sb3IgMzAwbXMgZWFzZS1pbi1vdXQ7XG4gIHotaW5kZXg6IDExMDA7XG59XG5cbi5saWdodGJveCB7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICBib3gtc2hhZG93OlxuICAgIDAgMCAxMnB4IHJnYmEoMCwgMCwgMCwgMC4zKSxcbiAgICAwIDFweCA1cHggcmdiYSgwLCAwLCAwLCAwLjIpO1xuICBtYXgtaGVpZ2h0OiAxMDAlO1xuICBtYXgtd2lkdGg6IDEwMCU7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmlmcmFtZVdyYXBwZXIge1xuICAvKiBpT1MgaGFzIGEgJ2ZlYXR1cmUnIHdoZXJlIGl0IHdpbGwgZXhwYW5kIGlmcmFtZXMgc28gdGhleSBiZWNvbWUgYXMgbGFyZ2UgYXMgdGhlaXIgY29udGVudFxuICAgICBkb2N1bWVudC4gV2hlbiB0aGlzIGhhcHBlbnMgdGhlIGZvbGxvd2luZyBwcm9wZXJ0aWVzIGFsbG93IHRoZSB1c2VyIHRvIHNjcm9sbCBpbiB0aGUgcGFyZW50XG4gICAgIGVsZW1lbnQgaW5zdGVhZCBvZiB0aGUgaWZyYW1lIGl0c2VsZi4gVGhpcyBzaG91bGQgaGF2ZSBubyBlZmZlY3Qgb24gbm9uLWlPUyBicm93c2VyczsgdGhlXG4gICAgIHNjcm9sbGluZyB3aWxsIGJlIGVudGlyZWx5IHdpdGhpbiB0aGUgaWZyYW1lLiAqL1xuICAtd2Via2l0LW92ZXJmbG93LXNjcm9sbGluZzogdG91Y2g7XG4gIG92ZXJmbG93OiBhdXRvO1xuXG4gIG1heC1oZWlnaHQ6IDEwMCU7XG4gIG1heC13aWR0aDogMTAwJTtcbn1cblxuLmlmcmFtZVdyYXBwZXIgaWZyYW1lIHtcbiAgYm9yZGVyOiBub25lO1xuICBkaXNwbGF5OiBibG9jaztcbiAgaGVpZ2h0OiAxMDAlO1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmNsb3NlIHtcbiAgYmFja2dyb3VuZDogdXJsKFwiaHR0cHM6Ly9idWlsZGVyLWFzc2V0cy51bmJvdW5jZS5jb20vcHVibGlzaGVkL2ltYWdlcy9saWdodGJveC1jbG9zZUAzeC5wbmdcIilcbiAgICBjZW50ZXIgLyAzMHB4IDMwcHggdHJhbnNwYXJlbnQgbm8tcmVwZWF0O1xuICBib3JkZXI6IG5vbmU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgZm9udC1zaXplOiAwO1xuICBoZWlnaHQ6IDQwcHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IC0xOXB4O1xuICB0b3A6IC0xOXB4O1xuICB3aWR0aDogNDBweDtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA0MjBweCkge1xuICAuYmFja2Ryb3Age1xuICAgIC8qIEFsbG93IHRoZSBsaWdodGJveCB0byByZWFjaCB0aGUgdmVydGljYWwgdmlld3BvcnQgZWRnZXMgYmVmb3JlIHNjcm9sbGluZyAqL1xuICAgIHBhZGRpbmctbGVmdDogMTAwMHB4O1xuICAgIHBhZGRpbmctcmlnaHQ6IDEwMDBweDtcbiAgfVxufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDM4MHB4KSB7XG4gIC5jbG9zZSB7XG4gICAgLyogTW92ZSB0aGUgY2xvc2UgYnV0dG9uIHRvIHRoZSBsZWZ0IHNvIGl0IHJlbWFpbnMgdmlzaWJsZSAqL1xuICAgIHJpZ2h0OiAxMHB4O1xuICB9XG59XG4iXX0= */
