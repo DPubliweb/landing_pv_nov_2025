@@ -4386,34 +4386,48 @@ a {
 </style>
 
 <style>
-#logos-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  padding: 10px 20px;
-  width: 100%;
-  max-width: 350px;
-  margin: 0 auto;
-}
-
-#logos-container .logo {
-  width: auto;
-  height: 32px;
-  object-fit: contain;
-}
-
-/* RESPONSIVE */
-@media (max-width: 480px) {
+  /* Conteneur des logos en flex */
   #logos-container {
-    gap: 10px;
-    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 10px;
+    max-width: 350px;
+    margin: 0 auto;
   }
-  #logos-container .logo {
-    height: 26px;
+
+  /* Neutralise le position:absolute des blocs logos à l'intérieur du container */
+  #logos-container .lp-pom-image {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 5px !important;
   }
-}
+
+  #logos-container .lp-pom-image-container {
+    overflow: visible !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  #logos-container .lp-pom-image img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  /* Version mobile : un peu plus petits */
+  @media (max-width: 480px) {
+    #logos-container {
+      padding: 0 10px 8px;
+    }
+    #logos-container .lp-pom-image img {
+      height: 26px;
+    }
+  }
 </style>
+
 
 
 <div class="backdrop__3tG5Hl"></div></body><style id="igor_ext_nofollow">a[rel~='nofollow'],a[rel~='sponsored'],a[rel~='ugc']{outline:.14em dotted red !important;outline-offset:.2em;}a[rel~='nofollow'] img,a[rel~='sponsored'] img,a[rel~='ugc'] img{outline:2px dotted red !important;outline-offset:.2em;}</style></html>
