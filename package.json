@@ -1,0 +1,12 @@
+{
+  "name": "landing-pv",
+  "version": "1.0.0",
+  "description": "Landing page statique servie avec Express sur Qoddi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
